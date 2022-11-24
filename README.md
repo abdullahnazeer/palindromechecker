@@ -111,6 +111,38 @@ public void checkStringArray(String[] stringArray) {
     }
 
 }
+
+```
+
+The final segment of code below shows the implementation of two JUnit tests, written to test two methods - one which is
+case-sensitive and one which is not case-sensitive.
+
+```
+@Test
+@DisplayName("Given the word racecar, return This string is a palindrome!")
+public void GivenWordRaceCar_ReturnPalindrome() {
+    PalindromeChecker checker = new PalindromeChecker();
+    // Arrange
+    String word = "racecar";
+    String expectedResult = "This string is a palindrome!";
+    // Act
+    String result = checker.checkStringWord(word);
+    // Assert
+    assertEquals(expectedResult, result);
+}
+
+@Test
+@DisplayName("Given the word raCecar, return This string is a palindrome!")
+public void GivenWordRaceCar_ReturnPalindromeNotCaseSensitive() {
+    PalindromeChecker checker = new PalindromeChecker();
+    // Arrange
+    String word = "raCecar";
+    String expectedResult = "This string is a palindrome!";
+    // Act
+    String result = checker.checkStringNotCaseSensitive(word);
+    // Assert
+    assertEquals(expectedResult, result);
+}
 ```
 
 ## End of Document
