@@ -7,7 +7,7 @@ A simple palindrome checker built using Java.
 A simple Java program which contains several methods for determining whether or not an input (a word, a sentence or an
 array of sentences) fits the definition of being a palindrome.
 
-### Executing program
+### Executing Program
 
 The program runs on a CLI - can be run on any Java IDE.
 
