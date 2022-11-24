@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class PalindromeChecker {
 
-    public void checkStringWord(String string) {
+    public String checkStringWord(String string) {
 
         String reversedString = "";
 
@@ -12,17 +12,17 @@ public class PalindromeChecker {
             reversedString += string.charAt(i);
         }
 
-        System.out.println(reversedString);
+//        System.out.println(reversedString);
 
         if (string.equals(reversedString)) {
-            System.out.println("This string is a palindrome!");
+            return "This string is a palindrome!";
         } else {
-            System.out.println("This string is not a palindrome!");
+            return "This string is not a palindrome!";
         }
 
     }
 
-    public void checkStringNotCaseSensitive(String string) {
+    public String checkStringNotCaseSensitive(String string) {
 
         String reversedString = "";
 
@@ -30,12 +30,12 @@ public class PalindromeChecker {
             reversedString += string.toLowerCase().charAt(i);
         }
 
-        System.out.println(reversedString);
+//        System.out.println(reversedString);
 
         if (string.toLowerCase().equals(reversedString)) {
-            System.out.println("This string is a palindrome!");
+            return "This string is a palindrome!";
         } else {
-            System.out.println("This string is not a palindrome!");
+            return "This string is not a palindrome!";
         }
 
     }
